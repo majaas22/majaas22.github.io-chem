@@ -54,3 +54,22 @@ nav {
     margin-left: 450px;
     margin-right: 100px;
     }
+    img {
+        display: block;
+        width: 500px;
+    }
+    figcaption {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    figure {
+        flex: 1;
+        display: inline-block;
+        margin-left: 150px;
+    }
+    figure img {
+        display: block;
+    }
