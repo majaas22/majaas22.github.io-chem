@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="text">
   <h1>Theory</h1>
 <hr class="dashed"> <!-- dashed line divider -->
 
@@ -39,9 +40,9 @@ optimise production ensuring a good product yield within a reasonable time frame
 
  <h2>Rate Laws and Reaction Order</h2>
 <p>Rate laws are mathematical equations that demonstrate how “the rate of a chemical reaction depends on reactant concentration” 
-  (Khan Academy, 2014). Generally, the rate law is written in the form <br>
-  <span class="center"> Rate= k[A]ᵐ[B]ⁿ </span><br>
- where k is a rate constant and m and n are exponents which are called reaction orders and convey how the concentration of each 
+  (Khan Academy, 2014). Generally, the rate law is written in the form </p>
+  <h3>Rate= k[A]ᵐ[B]ⁿ</h3>
+ <p>where k is a rate constant and m and n are exponents which are called reaction orders and convey how the concentration of each 
  separate reactant affects the reaction rate. According to Atkins and de Paula (2006), the magnitude of rate constant, k, is dependent
   on the temperature and is not influenced by the concentration of the reactants. The values of the exponents in a rate law (reaction orders) 
   cannot be predicted from a balanced equation: they must be determined experimentally as they depend on the reaction mechanism.</p>   
@@ -66,14 +67,16 @@ optimise production ensuring a good product yield within a reasonable time frame
    reversible reactions never proceed to completion, resulting in no net change in concentration (Revision Dojo 2025). In order for a 
    reversible reaction to reach dynamic equilibrium, it must be in a closed system, where no reactants or products can leave or enter 
    the reaction environment. This ensures that the changes in concentration are solely caused by the reaction. </p>
-<figure class="left">
-  <img src="images/Rate vs Time.png" alt="Graph showing rate vs time for a reversible reaction reaching dynamic equilibrium">
+  <div class="row">
+   <figure>
+    <img src="images/Rate vs Time.png" alt="Graph showing rate vs time for a reversible reaction reaching dynamic equilibrium">
   <figcaption><b>Figure 1:</b> Rate vs Time graph</figcaption>
-</figure>
-<figure class="right">
-  <img src="images/Conc vs Time.png" alt="Graph showing concentration vs time for a reversible reaction reaching dynamic equilibrium">
+  </figure>
+  <figure>
+    <img src="images/Conc vs Time.png" alt="Graph showing concentration vs time for a reversible reaction reaching dynamic equilibrium">
   <figcaption><b>Figure 2:</b> Concentration vs Time graph</figcaption>
-</figure>
+  </figure>
+  </div>
 <p>Le Chatelier's principle states that “If a system at equilibrium is disturbed by a change in concentration, pressure, or temperature, 
   the system will shift its equilibrium position so as to counter the effect of the disturbance” (Brown et al., 2012, p. 631). 
   The position of equilibrium can vary depending on different conditions such as concentration, pressure and temperature. 
@@ -83,14 +86,36 @@ optimise production ensuring a good product yield within a reasonable time frame
 
 <h2>Mathematical Modelling of Reaction Systems</h2>
 <p>Mathematical modelling is often used in Chemistry to demonstrate how changes occur in chemical systems over a period of time using equations 
-  rather than physical experiments. These models describe how quantities vary as the reaction progresses and allows scientists to predict 
-  reaction behaviours, efficiently explore effects of varied conditions and test hypotheses.</p>
-<p>In mathematical models, every chemical species is represented by a variable corresponding to its concentration e.g. the concentrations of
-   substance A might be written as [A] and the concentration of substance B as [B] etc. Equations are then used to calculate the concentration 
-   of each chemical species at different points in time. The results are displayed on a simple concentration vs time graph.</p>
-<p>Chemical reactions are time dependent: the concentrations of reactants and products change continuously as the reaction occurs. Therefore, 
-  mathematical models treat concentration as a time dependent variable, allowing the reaction to be analysed throughout its duration instead 
-  of only at the initial and final states. 
+  rather than physical experiments. These models describe how quantities vary as the reaction progresses and allows scientists to predict
+   reaction behaviours, efficiently explore effects of varied conditions and test hypotheses.</p>
+<p>Chemical reactions are time dependent: the concentrations of reactants and products change continuously as the reaction occurs. 
+Therefore, mathematical models treat concentration as a time dependent variable,while time acts as the independent variable. Instead of 
+calculating one single value, this allows models to generate a sequence of values over time to calculate the concentration of each chemical 
+species at different points in time. The results are plotted on a simple concentration vs time graph to visually describe the changes, 
+allowing the reaction to be analysed throughout its duration instead of only at the initial and final states. </p>
+<p>Changes in concentration are defined using differential equations which express the rate of change of concentration with respect to time. 
+  Differential rate of change is written in the form</p>
+<h3> d[A]/dt </h3>
+<p>where t represents time and [A] represents the concentration of species A. In these models, every chemical species is represented by a variable corresponding to its concentration e.g. the concentrations of substance A might be written as [A] and the concentration of substance B as [B] etc. This expression describes how rapidly the concentration is changing. A positive value would indicate an increasing concentration; whereas a negative value would indicate that it’s decreasing.
 </p>
+
+<h2>Numerical Methods</h2>
+<p>Differential equations are used to demonstrate how the concentration varies and often cannot be solved exactly to give an answer; instead 
+  they describe how the concentration changes at any given moment. Therefore, numerical methods are used to calculate concentration values at
+   small time intervals, allowing the behaviour of the system to be simulated over time.</p>
+
+<p>The Euler method works by dividing time into small and equal steps denoted by Δt. Using the differential equation, the rate of change
+   of concentration is calculated at each time step. The value obtained is then used to estimate the concentration at the next time step. 
+   The Euler method approximates the concentration values by calculating them at discrete time steps rather than producing a continuous equation.</p>
+
+<p>The Euler method is written in the form</p>
+<h3> [A]<span class="subscript">new</span> = [A]<span class="subscript">initial</span> + (d[A]/dt) × Δt </h3>
+<p>where [A] is the concentration of species A. In this equation, the new concentration is found by adding the change in concentration to the initial 
+value. Repeating this many times allows for the concentration of each species to be monitored throughout the reaction. </p>
+<p>The magnitude of the time step used can affect the accuracy: smaller time steps tend to produce more accurate results as larger steps result
+   in greater rounding errors (Steiner, 2008). Despite this, the Euler method allows for an effective way to numerically model reaction systems
+    and observe how the concentration of different species varies over time.</p>
+
+</div>
 </body>
 </html>
