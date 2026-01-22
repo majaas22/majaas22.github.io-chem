@@ -77,7 +77,7 @@ optimise production ensuring a good product yield within a reasonable time frame
   <figcaption><b>Figure 2:</b> Concentration vs Time graph</figcaption>
   </figure>
   </div>
-<p>Le Chatelier's principle states that “If a system at equilibrium is disturbed by a change in concentration, pressure, or temperature, 
+<p>Le Chatelier's principle states “if a system at equilibrium is disturbed by a change in concentration, pressure, or temperature, 
   the system will shift its equilibrium position so as to counter the effect of the disturbance” (Brown et al., 2012, p. 631). 
   The position of equilibrium can vary depending on different conditions such as concentration, pressure and temperature. 
   If equilibrium favors the products, the mixture will contain a greater proportion of products. In contrast, if it favours reactants, 
@@ -115,6 +115,17 @@ value. Repeating this many times allows for the concentration of each species to
 <p>The magnitude of the time step used can affect the accuracy: smaller time steps tend to produce more accurate results as larger steps result
    in greater rounding errors (Steiner, 2008). Despite this, the Euler method allows for an effective way to numerically model reaction systems
     and observe how the concentration of different species varies over time.</p>
+
+<h2>Temperature Dependence (Extension)</h2>
+<p>Temperature has a significant effect on the rate of a chemical reaction as it influences both the frequency of particle collisions and 
+  the kinetic energy with which they occur. The Arrhenius equation models this effect by relating the rate constant of a reaction to
+   temperature and is written in the form </p>
+<h3>K = Ae<span class="superscript">(-E<span class="subscript">a</span>/RT)</span> </h3>
+<p>where k is the rate constant, A is the pre-exponential factor representing the frequency of collisions, E<span class="subscript">a</span> is the activation energy, R is 
+the universal gas constant and T is the temperature measured in Kelvin (Royal Society of Chemistry, 2018). </p>
+<p>In this model, the activation energy and pre-exponential factor are assumed to be constant while temperature is an independent variable. 
+  An increase in the temperature decreases the magnitude of the denominator of the exponential term (RT), leading to a greater value for the 
+  rate constant, k. This relationship explains how increasing the temperature can lead to larger rate constants and faster chemical reactions.</p>
 
 </div>
 </body>

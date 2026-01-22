@@ -80,3 +80,7 @@ nav {
         font-size: smaller;
         vertical-align: sub;
     }
+    .superscript {
+        font-size: smaller;
+        vertical-align: super;
+    }
