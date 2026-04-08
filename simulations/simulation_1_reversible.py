@@ -15,7 +15,8 @@ B = np.zeros(len(time))
 A[0] = A0
 B[0] = B0
 
-for i in range(1, len(time)):
+# euler's method 
+for i in range(1, len(time)): 
     dA = (-k1 * A[i-1] + k2 * B[i-1]) * dt
     dB = (k1 * A[i-1] - k2 * B[i-1]) * dt
     A[i] = A[i-1] + dA
