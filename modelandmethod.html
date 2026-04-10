@@ -25,8 +25,16 @@
   <h2>Overview of the Model</h2>
   <p> The python simulation models how concentrations of chemical species change over time in a closed reaction system.
      Three simulations were developed: the first models a simple one step reversible reaction A ⇌ B, the second introduces
-      anirreversible step B → C to create a multistep reaction mechanism and the third further extends the model by taking 
+      an irreversible step B → C to create a multistep reaction mechanism and the third further extends the model by taking 
       into consideration the effect of temperature using the Arrhenius equation.</p>
+      <p>In these simulations, time is treated as the independent variable while the concentrations of each chemical species
+         are the dependent variables. The control variables consist of the rate constants, time step size (Δt), initial 
+         concentrations of the chemical species and temperature (in simulations one and two). As a result a set of values, showing how the concentration values change 
+         over time, is obtained. This is the output of the simulation and the values are then used to generate concentration-time
+          graphs for each of the reactions.</p>
+
+  <h2>Model assumptions</h2>
+  <p>This model makes several assumptions:</p>
 </body>
 </div>
 </html>
