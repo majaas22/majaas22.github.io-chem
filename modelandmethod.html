@@ -34,7 +34,17 @@
           graphs for each of the reactions.</p>
 
   <h2>Model assumptions</h2>
-  <p>This model makes several assumptions:</p>
+  <p>This model makes many assumptions:</p>
+  <ul>
+    <li>The reaction takes place in a closed system meaning that the transfer of matter in and out of the system is prevented and therefore 
+      the mass remains constant throughout the entire reaction process.</li>
+    <li>The system is homologous: there are no concentration gradients as the concentrations of all species are uniform.</li>
+    <li>The rate constants are assumed to remain constant throughout the entire reaction in simulations one and two. In simulation 3, 
+      rate constants vary with temperature.</li>
+    <li>In simulations one and two, temperature remains fixed and its effect on the rate of reaction is not considered.</li>
+    <li>No side reactions occur: only the desired reactions take place.</li>
+    <li>The time step (Δt) in Euler’s method is assumed to be a very small value in order to give accurate values and prevent rounding 
+      errors which could arise from greater time step values.</li>
 </body>
 </div>
 </html>
