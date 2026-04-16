@@ -33,7 +33,27 @@
          over time, is obtained. This is the output of the simulation and the values are then used to generate concentration-time
           graphs for each of the reactions.</p>
 
-  <h2>Model assumptions</h2>
+
+      <h2>Time Dependent Modelling of Concentration</h2>
+      <p>In this model, the concentration of each chemical species is treated as a function of time: concentrations of each species are
+         not constant, but instead constantly change as the reaction progresses. A system of differential equations is used to describe 
+         the rate of change of concentration for multiple variables simultaneously with respect to time. The equations are coupled as 
+         the rate of change of each species is dependent on the other concentrations within the reaction system. This system of 
+         equations links the concentrations’ effect on each other and allows for the overall behaviour of the reaction to be described 
+         and modelled mathematically.</p>
+
+         <h2>Mathematical Formulae</h2>
+         <p>As mentioned above, the reaction system can be described using coupled differential equations that show how the concentrations 
+          of each species change over time as the reaction progresses. For simulation one and the first step of simulation two and three
+           (A ⇌ B), the rate of change of concentrations can be written in the form</p>
+          <h3>d<b>[A]</b>/dt = -k<span class="subscript">1</span>[A] + k<span class="subscript">2</span>[B]</h3>
+          <h3>d<b>[B]</b>/dt = k<span class="subscript">1</span>[A] - k<span class="subscript">2</span>[B]</h3>
+          <p>Then in simulation two and three, an additional irreversible step (B→C) is introduced, written in the form</p>
+          <h3>d<b>[B]</b>/dt = k<span class="subscript">1</span>[A] - k<span class="subscript">2</span>[B] - k<span class="subscript">3</span>[B]</h3>
+          <h3>d<b>[C]</b>/dt = k<span class="subscript">3</span>[B]</h3>
+          <p>Where k1, k2, k3 are rate constants and [A], [B] and [C] represent the concentrations of each species.</p>
+
+   <h2>Model Assumptions</h2>
   <p>This model makes many assumptions:</p>
   <ul>
     <li>The reaction takes place in a closed system meaning that the transfer of matter in and out of the system is prevented and therefore 
@@ -45,6 +65,7 @@
     <li>No side reactions occur: only the desired reactions take place.</li>
     <li>The time step (Δt) in Euler’s method is assumed to be a very small value in order to give accurate values and prevent rounding 
       errors which could arise from greater time step values.</li>
+
 </body>
 </div>
 </html>
