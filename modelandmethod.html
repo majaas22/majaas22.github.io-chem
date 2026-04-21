@@ -53,6 +53,21 @@
           <h3>d<b>[C]</b>/dt = k<span class="subscript">3</span>[B]</h3>
           <p>Where k1, k2, k3 are rate constants and [A], [B] and [C] represent the concentrations of each species.</p>
 
+          <h2>Simulation Design</h2>
+          <p>The model consists of 3 simulations. Simulation 1 mimics a simple reversible reaction A⇌B. This initial model allowed me to ensure that
+             equilibrium can be reached and to observe the basic behaviours of the system such as how the concentration of the chemical species changes 
+             as equilibrium is approached. Most importantly, the simplicity of this version allowed me to ensure that the math and numerical methods were
+              working as expected before I added more complex steps to the model.</p>
+          <p>Simulation 2 expanded on this by introducing an additional irreversible step B→C. Adding this step allowed for a multistep reaction, 
+          where a product intermediate is formed, to be simulated. Due to the formation of the intermediate and the irreversible step, this reaction can
+           no longer reach a state of equilibrium. This can be observed on the concentration-time graphs generated as the concentration of B reaches a peak
+            and then decreases as C is formed.</p>
+          <p>Temperature dependence is incorporated into simulation 3 by varying the rate constants through the Arrhenius equation. This resulted in the 
+            rate constants no longer being constant but instead varied with temperature. This extension to the model allows for the effect of temperature
+             on reaction rates to be investigated and analysed. Concentration-time graphs with varied temperature values were generated and compared and it
+              was found that the higher the temperature, the quicker the reaction progressed. </p>
+
+              
    <h2>Model Assumptions</h2>
   <p>This model makes many assumptions:</p>
   <ul>
