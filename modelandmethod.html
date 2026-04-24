@@ -34,24 +34,34 @@
           graphs for each of the reactions.</p>
 
 
-      <h2>Time Dependent Modelling of Concentration</h2>
-      <p>In this model, the concentration of each chemical species is treated as a function of time: concentrations of each species are
+  <h2>Time Dependent Modelling of Concentration</h2>
+  <p>In this model, the concentration of each chemical species is treated as a function of time: concentrations of each species are
          not constant, but instead constantly change as the reaction progresses. A system of differential equations is used to describe 
          the rate of change of concentration for multiple variables simultaneously with respect to time. The equations are coupled as 
          the rate of change of each species is dependent on the other concentrations within the reaction system. This system of 
          equations links the concentrations’ effect on each other and allows for the overall behaviour of the reaction to be described 
          and modelled mathematically.</p>
 
-         <h2>Mathematical Formulae</h2>
-         <p>As mentioned above, the reaction system can be described using coupled differential equations that show how the concentrations 
+  <h2>Mathematical Formulae</h2>
+  <p>As mentioned above, the reaction system can be described using coupled differential equations that show how the concentrations 
           of each species change over time as the reaction progresses. For simulation one and the first step of simulation two and three
-           (A ⇌ B), the rate of change of concentrations can be written in the form</p>
-          <h3>d<b>[A]</b>/dt = -k<span class="subscript">1</span>[A] + k<span class="subscript">2</span>[B]</h3>
-          <h3>d<b>[B]</b>/dt = k<span class="subscript">1</span>[A] - k<span class="subscript">2</span>[B]</h3>
-          <p>Then in simulation two and three, an additional irreversible step (B→C) is introduced, written in the form</p>
-          <h3>d<b>[B]</b>/dt = k<span class="subscript">1</span>[A] - k<span class="subscript">2</span>[B] - k<span class="subscript">3</span>[B]</h3>
-          <h3>d<b>[C]</b>/dt = k<span class="subscript">3</span>[B]</h3>
-          <p>Where k1, k2, k3 are rate constants and [A], [B] and [C] represent the concentrations of each species.</p>
+       (A ⇌ B), the rate of change of concentrations can be written in the form</p>
+   <h3>d<b>[A]</b>/dt = -k<span class="subscript">1</span>[A] + k<span class="subscript">2</span>[B]</h3>
+  <h3>d<b>[B]</b>/dt = k<span class="subscript">1</span>[A] - k<span class="subscript">2</span>[B]</h3>
+  <p>Then in simulation two and three, an additional irreversible step (B→C) is introduced, written in the form</p>
+  <h3>d<b>[B]</b>/dt = k<span class="subscript">1</span>[A] - k<span class="subscript">2</span>[B] - k<span class="subscript">3</span>[B]</h3>
+  <h3>d<b>[C]</b>/dt = k<span class="subscript">3</span>[B]</h3>
+  <p>Where k1, k2, k3 are rate constants and [A], [B] and [C] represent the concentrations of each species.</p>
+
+  <h2>Numerical Implementation - Euler's Method</h2>
+  <p>As differential equations are used to model a rate of change, they cannot be solved to give discrete values; therefore a numerical method 
+  is required. In this project, Euler’s method is used to calculate the concentration values at discrete time steps throughout the reaction. The general 
+  formula used to update concentration values is</p>
+  <h3>New Conc = Current Conc + (d[species] / dt) x Δt </h3>
+  <p>where Δt is the time step. The general formula is the same for every species unlike the differential equations which are dependent on each other.
+  The process is repeatedly carried out until multiple concentration values are obtained using the equation over various values of time. This method 
+   is applied to each species in the reaction to obtain approximate values of concentration and time, which can then be used to plot concentration-time
+    graphs, and analyse the behaviour of the chemical system.</p>
 
           <h2>Simulation Design</h2>
           <p>The model consists of 3 simulations. Simulation 1 mimics a simple reversible reaction A⇌B. This initial model allowed me to ensure that
