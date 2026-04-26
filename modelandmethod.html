@@ -63,21 +63,29 @@
    is applied to each species in the reaction to obtain approximate values of concentration and time, which can then be used to plot concentration-time
     graphs, and analyse the behaviour of the chemical system.</p>
 
-          <h2>Simulation Design</h2>
-          <p>The model consists of 3 simulations. Simulation 1 mimics a simple reversible reaction A⇌B. This initial model allowed me to ensure that
-             equilibrium can be reached and to observe the basic behaviours of the system such as how the concentration of the chemical species changes 
-             as equilibrium is approached. Most importantly, the simplicity of this version allowed me to ensure that the math and numerical methods were
-              working as expected before I added more complex steps to the model.</p>
-          <p>Simulation 2 expanded on this by introducing an additional irreversible step B→C. Adding this step allowed for a multistep reaction, 
-          where a product intermediate is formed, to be simulated. Due to the formation of the intermediate and the irreversible step, this reaction can
-           no longer reach a state of equilibrium. This can be observed on the concentration-time graphs generated as the concentration of B reaches a peak
-            and then decreases as C is formed.</p>
-          <p>Temperature dependence is incorporated into simulation 3 by varying the rate constants through the Arrhenius equation. This resulted in the 
-            rate constants no longer being constant but instead varied with temperature. This extension to the model allows for the effect of temperature
-             on reaction rates to be investigated and analysed. Concentration-time graphs with varied temperature values were generated and compared and it
-              was found that the higher the temperature, the quicker the reaction progressed. </p>
+  <h2>Simulation Design</h2>
+  <p>The model consists of 3 simulations. Simulation 1 mimics a simple reversible reaction A⇌B. This initial model allowed me to ensure that
+    equilibrium can be reached and to observe the basic behaviours of the system such as how the concentration of the chemical species changes 
+    as equilibrium is approached. Most importantly, the simplicity of this version allowed me to ensure that the math and numerical methods were
+     working as expected before I added more complex steps to the model.</p>
+  <p>Simulation 2 expanded on this by introducing an additional irreversible step B→C. Adding this step allowed for a multistep reaction, 
+    where a product intermediate is formed, to be simulated. Due to the formation of the intermediate and the irreversible step, this reaction can
+    no longer reach a state of equilibrium. This can be observed on the concentration-time graphs generated as the concentration of B reaches a peak
+    and then decreases as C is formed.</p>
+    <p>Temperature dependence is incorporated into simulation 3 by varying the rate constants through the Arrhenius equation. This resulted in the 
+     rate constants no longer being constant but instead varied with temperature. This extension to the model allows for the effect of temperature
+     on reaction rates to be investigated and analysed. Concentration-time graphs with varied temperature values were generated and compared and it
+     was found that the higher the temperature, the quicker the reaction progressed. </p>
 
-              
+    <h2> Temperature Dependence (Extension)</h2>
+    <p>The Arrhenuis equation was used to include a temperature dependence on reaction rates in the model by varying the rate constants. This 
+      simulation was different from the others as it calculated the rate constants by using time as a variable rather than a fixed value. This 
+      caused an increase in temperature to produce a greater rate constant and therefore allowed the reaction to occur quicker and lead to faster 
+      changes in concentrations of the chemical species.</p>
+    <p>In order to truly investigate the effect of temperature, the simulation was run at multiple different values for temperature while 
+    keeping every other variable constant to ensure that any changes in the concentration-time graphs were only due to the change in temperature. 
+    Other than that, the same numerical method and model design were used across all three simulations to allow for direct comparison between them.</p>
+    
    <h2>Model Assumptions</h2>
   <p>This model makes many assumptions:</p>
   <ul>
