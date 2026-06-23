@@ -6,7 +6,7 @@ B0 = 0.0   # concentration B
 C0 = 0.0   # concentration C
 
 R = 8.314 # gas constant in J/(mol*K)
-T = 400 # temperature in Kelvin (25°C) [350,375,400]
+T = 400 # temperature in Kelvin [350,375,400]
 
 Ea1 = 50000 # Activation energy forward reversible reaction in J/mol
 Ea2 = 55000 # Activation energy reverse reversible reaction in J/mol

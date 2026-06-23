@@ -60,6 +60,7 @@ nav {
         font-family: Arial, sans-serif;
         font-size: 16px;
         margin-top: 8px;
+       text-align: center;
     }
     figure {
         display: block;
@@ -83,4 +84,11 @@ nav {
     .superscript {
         font-size: smaller;
         vertical-align: super;
+    }
+    .pic{
+        width: 65%;
+        height: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
