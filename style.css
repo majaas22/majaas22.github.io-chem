@@ -77,7 +77,7 @@ nav {
     .row {
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: 10px;
         margin-bottom: 30px;
     }
     .subscript {
