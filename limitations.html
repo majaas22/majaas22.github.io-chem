@@ -23,6 +23,29 @@
 
 </div>
 <body>
+<div class="text"> 
+  <h1>Limitations</h1>
+  <hr class="dashed"> <!-- dashed line divider -->
+  <p>Although the simulations successfully reproduced the expected behaviours and supported the hypotheses investigated,
+     they relied on several assumptions which simplified the model down and reduced the accuracy of the results. These 
+     assumptions made the model easier to build and interpret results but they also reduced the ability to recreate real life reaction 
+     systems accurately.</p>
+
+     <h2>Limitation 1: Euler's Method</h2>
+      <p>The simulations were solved using Euler’s method which is a simple numerical method used to estimate solutions 
+        to differential equations when an exact, discrete value cannot be found. It is straightforward to implement into
+         the model and suitable for modelling change of concentration over time; however it does not produce an exact 
+         solution. Instead, the concentration is updated over time by using small time intervals. This means that the 
+         accuracy of the result is dependent on the size of the time step chosen as a smaller time step.. If the time step 
+         is too big, a less accurate graph could be produced as the slope would be updated less frequently. This could
+          potentially affect the predicted time for the reaction to reach equilibrium. A small time step of 0.1 was used 
+          throughout the simulations to minimise this error, ensuring that the concentration curves were smooth and followed 
+          the expected behaviour. Despite this, Euler’s method is still an approximation and a small degree of error remains 
+          and cannot be fully avoided.</p>
+
+
+
+</div>
 
     
 </body>
