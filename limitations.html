@@ -43,6 +43,17 @@
           the expected behaviour. Despite this, Euler’s method is still an approximation and a small degree of error remains 
           and cannot be fully avoided.</p>
 
+    <h2>Limitation 2: Perfect Mixing Assumed </h2>
+    <p>The model assumes that throughout the simulation the reaction mixture is perfectly mixed meaning that physical properties
+       of the mixture,such as temperature and concentration, stay uniform throughout. It also would mean that every particle in
+        the mixture has the exact same probability of having a successful collision and reacting, which simplifies the calculations
+         by allowing the concentration to be defined as a single value that changes with time. </p>
+
+    <p>In real life, chemical reactions do not occur under these conditions, instead concentration gradients develop. Variations in
+       concentration can affect the frequency of successful collisions. Incorporating a mixing effect would help produce a more accurate
+        representation of the reaction and produce better results; however it would be significantly more complex and time consuming to
+         implement, so the assumption was used as a compromise.</p>
+
 
 
 </div>
