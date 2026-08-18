@@ -23,26 +23,26 @@ The reaction system A ⇌ B → C was used in this simulation. Arrhenius equatio
 Each simulation can be run directly from its corresponding Python file. No changes to the code or parameters are needed.
 
 ## Repository Structure
-├── images/                    - contains png files of the generated graphs 
-├── simulations/
-│   ├── simulation_1.py
-│   ├── simulation_2.py
-│   └── simulation_3.py
-├── code.html
-├── conclusion.html
-├── index.html
-├── introduction.html
-├── limitations.html
-├── modelandmethod.html
-├── references.html
-├── resultsandanalysis.html
-├──style.css
-├──theory.html 
-└── README.md
+├── images/                    - contains png files of the generated graphs <br>
+├── simulations/ <br>
+│   ├── simulation_1.py <br>
+│   ├── simulation_2.py <br>
+│   └── simulation_3.py <br>
+├── code.html <br>
+├── conclusion.html  <br>
+├── index.html <br>
+├── introduction.html <br>
+├── limitations.html <br>
+├── modelandmethod.html <br>
+├── references.html <br>
+├── resultsandanalysis.html <br>
+├──style.css <br>
+├──theory.html <br>
+└── README.md <br>
 
 ## Limitations
--Eulers Method: numerical approximation used to estimate solutions to differential equations when a discrete value cannot be found.  The accuracy of the result is dependent on the size of the time step chosen
--Perfect Mixing Assumed: assumes physical properties of the mixture, such as temperature and concentration, stay uniform throughout. Simplifies the calculations by allowing the concentration to be defined as a single value that changes with time. 
--Constant Conditions:  pressure, temperature and volume remained fixed. This can influence the behaviour of the system so accuracy is reduced.
--Simplified Reaction Mechanism: most real reactions involve several steps and multiple intermediates. Side reactions also occur leading to a loss in product.
+- Eulers Method: numerical approximation used to estimate solutions to differential equations when a discrete value cannot be found.  The accuracy of the result is dependent on the size of the time step chosen <br>
+- Perfect Mixing Assumed: assumes physical properties of the mixture, such as temperature and concentration, stay uniform throughout. Simplifies the calculations by allowing the concentration to be defined as a single value that changes with time. <br>
+- Constant Conditions:  pressure, temperature and volume remained fixed. This can influence the behaviour of the system so accuracy is reduced.<br>
+- Simplified Reaction Mechanism: most real reactions involve several steps and multiple intermediates. Side reactions also occur leading to a loss in product.<br>
 
